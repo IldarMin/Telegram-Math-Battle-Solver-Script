@@ -1,15 +1,12 @@
 var restart = document.getElementById('button_correct');
 restart.click();
-var task_x = +document.getElementById('task_x').innerHTML;
-var task_op = document.getElementById('task_op').innerHTML;
-var task_y = +document.getElementById('task_y').innerHTML;
-var task_res = document.getElementById('task_res').innerHTML;
+
 
 function runIt() {
-  task_x = +document.getElementById('task_x').innerHTML;
-  task_op = document.getElementById('task_op').innerHTML;
-  task_y = +document.getElementById('task_y').innerHTML;
-  task_res = +document.getElementById('task_res').innerHTML;
+  var task_x = +document.getElementById('task_x').innerHTML;
+  var task_op = document.getElementById('task_op').innerHTML;
+  var task_y = +document.getElementById('task_y').innerHTML;
+  var task_res = document.getElementById('task_res').innerHTML;
   
   if (task_op == '+') {
     if (task_x+task_y == task_res) {
